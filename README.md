@@ -153,3 +153,28 @@ Once all tests are passing and code is pushed to the `main` branch:
 - Application passes all test suites
 - `/` route is created and returns correctly
 - `/<model>` route is created and returns correctly
+
+## Completed Application
+
+This Flask application includes two GET routes:
+
+- `/` returns `Welcome to Flatiron Cars`.
+- `/<model>` checks whether the requested model is in the fleet.
+  - Available models: Beedle, Crossroads, M2, and Panique.
+  - Model names are case-sensitive.
+  - Available models return `Flatiron {model} is in our fleet!`
+  - Unavailable models return `No models called {model} exists in our catalog`
+
+## Testing
+
+Run the provided tests from the project root:
+
+```bash
+pipenv run pytest
+```
+
+Result: All 5 tests passed.
+
+## Screenshot
+
+![All five tests passing](screenshots/tests-passed.png)
